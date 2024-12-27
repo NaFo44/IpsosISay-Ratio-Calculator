@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "IpsosISay Ratio Calculator",
+    "version": "1.0",
+    "description": "Calcule le meilleur ratio gain/temps pour les sondages sur IpsosISay.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://*.ipsosisay.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.ipsosisay.com/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ]
+  }
+  
